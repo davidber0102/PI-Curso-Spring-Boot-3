@@ -1,4 +1,4 @@
-<h1 align="center">Comenzando y Conociendo CSS</h1>
+<h1 align="center">Curso Spring Boot 3</h1>
 <p align="center"> Curso Spring Boot 3.</p>
 <p align="center">  Instructor: Juan Diaz</p>
 <p align="center">  Alumno: David Bernal Diaz</p>
