@@ -1,0 +1,151 @@
+/*
+*Curso Spring Boot
+* https://www.pildorasinformaticas.es/course-status/
+*@author: Juan Diaz
+*@estudiante: David Bernal diaz
+*
+*/
+
+¿Que es es?
+	- Extension del framework Spring
+
+¿Para que sirve?
+	-Simplificar la creacion de aplicaciones spring
+	- utiliza configuraciones predefinidadas y startesrs.
+		- Simplificacion de dependencias
+		- Configuracion automatica
+		- Mejora de productividad
+		-Disminucion de errores
+
+¿Diferencias entre Spring y Spring Boot?
+	
+	****Spring  						*****Spring Boot
+	Configuracion engorrosa					Cnfiguracion simple
+	No incluye servidor					Incluye servidor embebido
+	Engorroso para microservicios				Diseñado para microservicios
+	Gestion individula de dependencias			Uso de starts para gestion de dependencias
+	Configuracion manual para metricas y monitizacion	Soporte para Actuator
+	Flexible para apps complejas				Ideal para apps sencillas y microservicios
+
+Rquisitos y software para seguir el curso
+	Conocimientos de programacion en Java
+		- POO, Clases, Interfaces, Herencia, Excepciones, coleciones
+	JDK( JAVA dEVELOPRMENT kIT)- vERSION 17 O SUPERIOR (PARA SPRING bOOT 3)
+	IDE IntelliJ( Community edition)
+
+----------- REGUNTAS Y COMENTARIOS SOBRE INTRODUCCION A SPRING BOOT
+
+	-- 
+
+-	-- SPRING INITIALIZER---STARTRS
+	-- CONTROLLERS
+		- REST CONTROLLER-
+		- CONTROLLER
+
+--- ¿QUE ES UN REST CONTROLLER?
+	 una clase Java que sera un controlador que manejara solicitudes wen
+
+¿QUE UTILIDAD TIENE?
+	Prpporcionar datos a aplicaciones cliente
+	Procesar datos
+	Manjejar la loica de la aplicacion
+
+Mostarar pagina de inicio
+	Podemos utilizar un REST Controller para mostrar la pagina de inicioo auqnue seria mas adecuado tuilizar u -cntrolll
+
+
+
+
+		 @RESTCONTROLLER					@CONTROLLER
+	uTILIZADO PATRA CREAR APIS RESTFUL				UTILIZANDO PARA SOLICITUES TRADICIONALES
+	DEVUELVE LOS DATOS EN FOTRMATO JSON O XML			DEVUELVE VISTAS HTML	
+
+
+-------------------------------------------------------MAVEN---------------------------------------------------
+	--- ¿QUE ES?
+		- HERRAMIENTA PARA LA GESTION DE PROYECTOS-- "PROJECT MANAGEMENT TOOL"
+		- USO MAS FRECUENTE: CNSTRUCCION DE PROYECTOS JAVA Y GESTION DE DEPENDENCUAS
+		-- GESTIONS DE DEPENDENCIAS ---> ARCHIVOS JAR NECESARIOS
+			- CORE SPRING
+			- HIBERNATE
+			- JSON
+			- ETC
+	--- ¿PAA QUE SIRVE?
+		- ESPECIFICAMOS A MAVEN QUE NECESIDADES TENDRA NUESTRO PROYTECTO(HIBERNATE, JSON, LOGGIN)
+		- MAVEN DESCARGARA LOS ARCHIVOS JAR PARA LOS PROYECTOS
+		- MAVEN HARA QUE ESTEN DISPOINLES DURANTE LA COMPILACION Y EJECUCION DEL PROYECTO
+
+
+--- IMPORTANCIA MAVEN CON SPRING BOOT
+	- PREDETERMINACION Y AUTOMATIZACION
+	- ARRANQUE RAPIDO
+	- DEPENDENCIAS AUTOCONFIGURADAS
+	- EMPAQUETADO Y DESPLIIEGUE AUTOMATIZADO
+	- SOPORTE EXTENSE DE PLUGINS
+	- GESTION Y CONFIGURACION DE PERFILES
+	- INTEGRACION Y ENTREGA CONTINUOS
+
+
+
+	-- SIN MAVEN
+		PROYECTO		DESAROLLADOR
+		-- SPRING					SPRING Jar files		
+		-- HIBERNATE					hibernate JAR files
+		-- JSON						Json jar files
+		-- ETC
+	- 
+
+***************************************************** ARCHIVO POM.XML**************************************************
+------------------------- ESTRUCTURA------------------------------
+
+--- PROJECT METADATA
+	- NOMBRE DEL ARCHIVO. VERSION
+	- ARCHIVO GENERADO: WAR, JAR, ETC
+
+--- DEPENDENCIES
+	- SPRING
+	- HIBERNATE
+
+--- PLUGINS
+	- TAREAS ADICIONALES
+	- INFORMES, TEST, JUNIT ETC
+	
+ 
+
+*********************************************************************************** SpringBoot DevTools********************************************************************************************************************
+-- herramientas de desarrollo
+	--- funcion para ejecutar y modificar proagrmas al mismo tiempo
+	--- se deve agregar la dependencia al POM.XML
+
+
+*********************************************************************************** SpringBoot Actuator********************************************************************************************************************
+--- ¿QUE ES?
+	- MODULO QUE PROPORCINA HERRAMIENTAS UTILES PARA MONITOREAR Y GESTIONAR APLICACIONES SPRING BOOT EN PRODUCCION
+	- TAMBIEN POSEE HERRAMIENTAS UTILES DURANTE EL DESARROOLO
+--- ¿COMO FUNCIONA?
+	- DANDO VISIBILIDAD SOBRE EL ESTADO INTERNO DE LA APLICAICONES
+		-- LOGS
+		-- METRICAS
+		-- INFORMACION DE CONFIGURACION
+		-- SALUD DE LA APLICACIONES
+		-- ENDPOINTS EXPUESTOS
+
+-- ¿QUE SON LOS  "ENDPOINTS"?
+	- Es una URL de una aplicacion que permite a los clientes interacturar con un servicio especifico a trves de la red, generalente usando protocoloes como HTTP.
+	- EJEMPLOS
+		- /actuator/info
+		- /actuator/helth
+		- /actuator/metrics
+		- /actuator/env
+		- /actuator/loggers
+
+como intercatuar con ACTUATOR
+	- ENDPOINTS
+	- APPS DE TERCEROS (PROMETEUS)
+	- JMX (JAVA MANAGAMENT XTENTION )
+	- LOGS
+	- CONFIGURACION Y GESTION INTERNA
+
+
+
+
